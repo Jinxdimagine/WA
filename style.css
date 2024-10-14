@@ -18,18 +18,23 @@ line-height: 1.6;
     box-sizing: border-box;
 }
 
-
+/*
+Modifying ul list to use as navigation bar
+*/
 ul.navbar{
  list-style-type: none;
 background-color: rgb(236, 191, 133);
- margin: 10px;
- padding: 10px;
+ margin: 20px;
+ padding: 30px;
 }
 
 .navbar li{
 display:inline-block;
  
 }
+/*
+Modifying atributes inside ul list 
+*/
 .navbar a{
     text-decoration: none;
     color: white;
@@ -37,6 +42,23 @@ display:inline-block;
     padding: 16px 14px ;
     margin: 10px;
 }
+#About{
+ background-color: chocolate;
+}
+#Menu{
+background-color: crimson;
+}
+#Contacts{
+background-color: brown;
+}
+table ,th,td{
+text-align: left;
+}
+th,td{
+    padding-right: 60px;
+    font-size: large;
+}
+
  a:hover{
    color: coral;
 }
