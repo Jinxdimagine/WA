@@ -42,21 +42,31 @@ Modifying atributes inside ul list
     padding: 16px 14px ;
     margin: 10px;
 }
-#About{
- background-color: chocolate;
-}
-#Menu{
-background-color: crimson;
-}
-#Contacts{
-background-color: brown;
-}
+
 table ,th,td{
 text-align: left;
 }
 th,td{
     padding-right: 60px;
     font-size: large;
+}
+
+.formsection {
+border-spacing: 30px;
+padding: 30px;
+border-color: black;
+}
+form{
+ display: flexbox;
+ padding: 30px;
+ border: 30px;
+ border-color: black;
+ text-align: center;
+ 
+}
+
+input{
+width: 100%;
 }
 
  a:hover{

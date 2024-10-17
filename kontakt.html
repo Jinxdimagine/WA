@@ -7,12 +7,39 @@
     <meta name="description" content="Café Aroma - nejlepší káva ve městě.">
  </head>
  <body>
-    <ul class="navbar">
+    <nav>
+        <ul class="navbar">
         <li><a href="stranka.html"  id="About" target="_blank" >About</a></li>
         <li><a href="menu.html" id="Menu" target="_blank">Náš jídelní lístek</a></li>
         <li><a href="kontakt.html" id="Contacts" target="_blank" >Contacts</a></li>
     </ul>
-
+    </nav>
+    <main >
+    <section class="formsection">
+    <form >
+    <label for="name">Vaše jméno</label>
+    <br>
+    <input type="text" id="name" name="name" placeholder="Vaše jméno" required>
+    <br>
+    <label for="email">Váš email</label>
+    <br>
+    <input type="email" name="email" id="email" placeholder="Váš email" required>
+    <br>
+    <label for="predmet">Předmět</label>
+    <br>
+    <input type="text" name="predmet" id="predmet" placeholder="Předmět" required>
+    <br>
+    <label for="zprava">Zpráva</label>
+    <br>
+    <textarea name="zprava" id="zprava" cols="30" rows="10"></textarea>
+    <br>
+    <input type="submit" value="submit">
+    <input type="reset" value="reset">
+        </form>
+   
+    </section>
+    
+    </main>
     <footer>
         <ul class="navbar">
             <li><a href="stranka.html"   target="_blank" >About</a></li>
