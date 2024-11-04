@@ -17,103 +17,116 @@ line-height: 1.6;
 *{
     box-sizing: border-box;
 }
-
+a{
+    text-decoration: none;
+}
 /*
 Modifying ul list to use as navigation bar
 */
 .navbar{
  list-style-type: none;
  background-color: rgb(100, 57, 0);
- margin: 20px;
- padding: 30px;
+ position: absolute;
+ top: 0px;
+ width: 100%;
 }
 .navbarimage{
-    margin-left: 30cm;
+    margin-left: 28cm;
 }
 .navbar li{
 display:inline-block;
-
+padding: 20px;
 }
+
 .navbar a{
     text-decoration: none;
     color: white;
     text-align: center;
-    padding: 16px 14px ;
-    margin: 10px;
     font-size: 20px;
+   margin-left: 20px;
+}
+.nazev{
+    font-size: 40px;
+    color: antiquewhite;
 }
 .navbarbottom{
-    position: absolute;
-    bottom: 10px;
-    list-style-type: none;
-    background-color: rgb(100, 57, 0);
-    margin: 20px;
-    padding: 30px;
+background-color: rgb(100, 57, 0);
+position: absolute;
+bottom: 0px;
+display: inline-block;
+padding: 30px;
+width: 100%;
 }
-.navbarbottom li{
-    display:inline-block;
+footer {
+    color: rgb(106, 101, 101); 
+    display: block;
 }
-.navbarbottom a{
-    text-decoration: none;
-    color: white;
-    text-align: center;
-    padding: 16px 14px ;
-    margin: 10px;
-    font-size: 20px;
+footer a{
+font-size: 20px;
+
 }
+/*
+modifying table
+*/
 table{
 display: inline-block;
-width: 500;
-height: 400;   
+  
 background-color: rgb(248, 217, 177);
 }
+
 .menuNapoje{
-    margin-left: 4cm;
-    margin-top: 2cm;
-   
-}
-.menuJidlo{
-    margin-left: 25cm;
-    margin-top: 2cm;
+margin-top: 100px;
+margin-left: 25%;
+float: left;
 }
 table ,th,td{
 text-align: left;
 }
 th{
     padding-top: 15px;
-    font-size: 30px;
+    font-size: 15px;
     padding-left: 15px;
 }
 td{
-    padding-right: 60px;;
-    font-size: 20px;
+    padding-right: 10px;;
+    font-size: 15px;
     padding-left: 50px;
 }
+/*
+form section
+*/
 .formsection {
 position:static;
-margin-left: 20cm;
-padding-top: 10px;
-width: 500px;
-height: 600px;
+margin-top: 3cm;
+margin-left: 9cm;
+width: 400px;
+height: 500px;
 border-color: black;
 background-color: burlywood;
 }
+/*
+form
+*/
 form{
-padding-top: 20px;
+display:block;
 margin-top: 50px;
 margin-left: 50px;
-display:block;
-width: 400px;
-height: 500px;
+width: 300px;
+height: 400px;
 text-align: left;
 background-color: blanchedalmond;
 }
+
+textarea{
+    resize: none;
+    
+}
 input{
 width: 100%;
-padding: 10px;
+padding: 5px;
 }
 label{
-padding: 10px;
+padding: 5px;
 }
 .divform{
     display: block;
@@ -122,13 +135,38 @@ padding: 10px;
 text-align: center;
 width: 20%;
 margin-left: 235px;
+margin-bottom: 50px;
 }
 .reset{
     text-align: center;
     width: 20%;
 }
+/*
+galerie 
+*/
+.galeriesection{
+    display: grid;
+    margin-left: 80px;
+    margin-top: 80px;
+}
+.row{
+    display: inline-block;
+}
+.main-conctent{
+max-width: 1200px;
+margin: 0 auto;
+}
+img{
+    width: 300px;
+    height: auto;
+    padding: 10px;
+    border-radius: 25px;
+}
 a:hover{
    color: coral;
+}
+input:focus{
+    background-color: rgb(211, 230, 247);
 }
 .highlight{
    background-color: gold;
