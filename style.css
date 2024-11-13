@@ -75,7 +75,14 @@ color: white;
 }
 footer a{
 font-size: 20px;
-
+}
+@media only screen and (max-width: 600px){
+ .navbarbottom{
+    padding: 15px
+ }
+footer a{
+    font-size: 10px;
+}
 }
 /*
 modifying table
@@ -112,8 +119,7 @@ form section
 */
 .formsection {
 position:static;
-margin-top: 3cm;
-margin-left: 35%;
+margin-top: 10%;
 width: 400px;
 height: 500px;
 border-color: black;
@@ -130,7 +136,9 @@ height: 500px;
 text-align: left;
 background-color: blanchedalmond;
 }
+@media only screen and (max-width: 600px){
 
+}
 textarea{
     resize: none;
     
