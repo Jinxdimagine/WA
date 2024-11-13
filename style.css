@@ -26,14 +26,14 @@ Modifying ul list to use as navigation bar
 .navbar{
  list-style-type: none;
  background-color: rgb(100, 57, 0);
- position: absolute;
+ position: fixed;
  top: 0px;
  width: 100%;
+ padding-inline-start: 20px;
 }
 .navbar li{
 display:inline-block;
 padding: 10px;
-margin-left: 5%;
 }
 .navbar a{
     text-decoration: none;
@@ -44,13 +44,17 @@ margin-left: 5%;
 @media only screen and (max-width: 600px){
 .navbar li {
 font-size: 20px;
-margin-left: 1%;
 padding: 2%;
 }
 .navbar a {
-font-size: 10px;
+font-size: 13px;
 }
-
+@media only screen and (min-width: 800px){
+.navbar li{
+margin-left: 2%;
+}    
+}
+ 
 }
 .nazev{
     font-size: 40px;
@@ -170,11 +174,11 @@ galerie
 */
 .galeriesection{
     display: grid;
-    margin-left: 30%;
-    margin-top: 80px;
+    margin-top: 10%;
 }
 .row{
-    display: inline-block;
+    display: flex;
+justify-content: center;
 }
 .main-conctent{
 max-width: 1200px;
@@ -182,13 +186,25 @@ margin: 0 auto;
 display: flex;
 align-items: center;
 justify-content: center;
-
 }
 img{
     width: 250px;
     height: auto;
     padding: 10px;
     border-radius: 25px;
+}
+@media only screen and (max-width: 600px){
+    img{
+        width: 175px;
+    }
+    .galeriesection{
+        margin-top: 15%;
+    }
+}
+@media only screen and (min-width: 800px){
+    img{
+        width: 300px;
+    }
 }
 a:hover{
    color: coral;
