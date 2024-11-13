@@ -30,20 +30,27 @@ Modifying ul list to use as navigation bar
  top: 0px;
  width: 100%;
 }
-.navbarimage{
-    margin-left: 28cm;
-}
 .navbar li{
 display:inline-block;
 padding: 10px;
 margin-left: 5%;
 }
-
 .navbar a{
     text-decoration: none;
     color: white;
     text-align: center;
     font-size: 20px;
+}
+@media only screen and (max-width: 600px){
+.navbar li {
+font-size: 20px;
+margin-left: 1%;
+padding: 2%;
+}
+.navbar a {
+font-size: 10px;
+}
+
 }
 .nazev{
     font-size: 40px;
@@ -81,6 +88,11 @@ background-color: rgb(248, 217, 177);
 
 .MenuSection{
 margin-top: 10%;
+}
+@media only screen and (max-width: 600px){
+    .MenuSection {
+        margin-top: 15%;
+    }
 }
 table ,th,td{
 text-align: left;
