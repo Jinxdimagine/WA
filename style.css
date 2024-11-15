@@ -26,7 +26,7 @@ Modifying ul list to use as navigation bar
 .navbar{
  list-style-type: none;
  background-color: rgb(100, 57, 0);
- position: fixed;
+ position: absolute;
  top: 0px;
  width: 100%;
  padding-inline-start: 20px;
@@ -62,7 +62,7 @@ margin-left: 2%;
 }
 .navbarbottom{
 background-color: rgba(255, 189, 97, 0.46);
-position: absolute;
+position: fixed;
 bottom: 0px;
 display: block;
 padding: 30px;
@@ -123,7 +123,6 @@ form section
 */
 .formsection {
 position:static;
-margin-top: 10%;
 width: 400px;
 height: 500px;
 border-color: black;
@@ -140,8 +139,17 @@ height: 500px;
 text-align: left;
 background-color: blanchedalmond;
 }
-@media only screen and (max-width: 600px){
-
+@media only screen and (min-width: 600px){
+    .formsection {
+        width: 600px;
+        height: 700px;
+    }
+    form{
+        width: 500px;
+        height: 600px;
+        margin-left: 10%;
+        margin-top: 10%;
+    }
 }
 textarea{
     resize: none;
@@ -203,7 +211,7 @@ img{
 }
 @media only screen and (min-width: 800px){
     img{
-        width: 300px;
+        width: 400px;
     }
 }
 .container {
@@ -212,11 +220,11 @@ img{
         "header header header"
         "main main sidebar"
         "footer footer footer";
- grid-template-columns: 1fr 2fr 1fr;
+ grid-template-columns: 1fr 3fr 1fr;
  grid-template-rows: 1fr 2fr 1fr;       
  gap: 10px;
  width: 100%;
- height: auto;
+ height: 100%;
 }
 @media only screen and (max-width: 600px){
     .container{
@@ -226,13 +234,14 @@ img{
         "main "
         "sidebar"
         "footer ";
-        grid-template-columns:1fr
+        grid-template-columns: 0% 1fr;
+        grid-template-rows: 50px 50px 400px 100px 100px;    
     }
 }
 .container nav{
     grid-row-start: 1;
     grid-row-end: 1;
-
+width: 100%;
 }
 .container footer{
     grid-row-start:3 ;
